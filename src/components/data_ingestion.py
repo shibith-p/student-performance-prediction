@@ -48,3 +48,8 @@ class DataIngestion:
             raise CustomException(e)
         
 
+if __name__ == "__main__":
+    obj = DataIngestion()
+    train_df, test_df = obj.initiate_data_ingestion()
+    obj2 = DataTransformation()
+    obj2.initiate_data_transformation(train_path=train_df, test_path=test_df)
