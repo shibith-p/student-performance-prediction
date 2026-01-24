@@ -6,4 +6,5 @@ scikit-learn
 xgboost
 pickle
 flask
+fastapi
 #-e .
